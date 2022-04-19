@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Geladon</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+
+    <section class="modal-overlay" id="overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Cadastra Paleta</h2>
+                <a class="close-modal" onclick="fecharModalCadastro()">x</a>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <input type="text" name="sabor" id="sabor" placeholder="Sabor">
+                    <input type="number" name="preco" id="preco" placeholder="Preço">
+                    <textarea type="text" name="descricao" id="descricao" placeholder="Descrição" rows="5"></textarea>
+                    <input type="text" name="foto" id="foto" placeholder="Link da foto">
+                    <button onclick="createPaleta()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="Home">
+        
+        <div class="modal-body">
+            <section class="button-modal-create">
+                <button type="button" class="default-button" onclick="abrirModalCadastro()">Cadastrar Paleta</button>
+            </section>
+        </div>
+
+         <h2>Pesquisar Paleta</h2>
+         
+        <div class="paleta-escolhida-espaco">
+            <div>
+                <input type="number" id="idPaleta" 
+                placeholder="Digite o ID da paleta e clique em 'Escolher'"/>
+                <button class="default-button" onclick="findByIdPaletas()">Escolher</button>
+            </div>
+            <div id="paletaEscolhida"></div>
+        </div>
+        
+        
+        <h2>PALETAS DISPONIVEIS</h2>
+
+        <div class="Home__container">
+            <div class="PaletaLista" id="paletaList">
+            </div>
+        </div>
+    </div>
+    
+    <script src="/assets/script.js"></script>
+</body>
+</html>
