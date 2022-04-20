@@ -255,3 +255,51 @@ html {
 
   }
 
+  .Acoes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .btn {
+    border: none;
+    color: #fff;
+    border-radius: .3rem;
+    padding: .5rem;
+    max-width: 280px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 48%;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  .Acoes__editar {
+      color: blue;
+      border: solid 1px blue;
+      background-color: transparent;
+    }
+
+    .Acoes__editar:hover{
+      color: #fff;
+      background-color: blue;
+    }
+
+  
+  
+    .Acoes__excluir {
+
+    color: red;
+    border: solid 1px red;
+    background-color: transparent;
+    
+  }
+
+  .Acoes__excluir:hover{
+    color: #fff;
+    background-color: red;
+  }
+
+
+  

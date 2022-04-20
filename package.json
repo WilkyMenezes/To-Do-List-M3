@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WilkyMenezes/project-testm3.git"
+    "url": "git+https://github.com/WilkyMenezes/To-Do-List-M3.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WilkyMenezes/project-testm3/issues"
+    "url": "https://github.com/WilkyMenezes/To-Do-List-M3/issues"
   },
-  "homepage": "https://github.com/WilkyMenezes/project-testm3#readme",
+  "homepage": "https://github.com/WilkyMenezes/To-Do-List-M3#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3"
