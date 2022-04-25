@@ -67,13 +67,17 @@ const updatePaletaController = (req, res) => {
 const deletePaletaController = (req, res) => {
   const idParam = Number(req.params.id);
   
+  console.log('idParam:'+idParam)
+  
   if (!idParam){
-    return res.status(400).send({message: ' Id invalido '});
-  }
+    return res.send({message: ' Id invalido '});
+  }else{
     paletasService.deletePaletaService(idParam);
-
-  res.send({ message: 'Paleta deletada com sucesso!'});
+  
+    res.send({ message: 'Paleta deletada com sucesso!'});
+  }
 };
+
 
 
 module.exports = {
